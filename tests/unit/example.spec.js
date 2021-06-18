@@ -1,12 +1,12 @@
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import CatImg from '@/components/CatImg.vue'
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
+describe('CatImg.vue', () => {
+  it('renders props.imgUrl when passed', () => {
+    const imgUrl = 'n595f280a557291a9750ebf58'
+    const wrapper = shallowMount(CatImg, {
+      propsData: { imgUrl }
     })
-    expect(wrapper.text()).toMatch(msg)
+    expect(wrapper.text()).toMatch(imgUrl)
   })
 })
